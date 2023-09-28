@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple, Transparent Pricing</h1>
+    <p class="para">
+      Choose a plan that fits your needs. Cancel anytime,no questions asked
+    </p>
+    <br />
+    <br />
+    <div class="card">
+      <div class="card-type" onclick="changeBackgroundColor(this)">
+        <h3>Starter</h3>
+        <p>9$/mo</p>
+        <ul>
+          <li>1 Workplace</li>
+          <li>Unlimited Members</li>
+          <li>10GB Storage</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+      <div class="card-type2" onclick="changeBackgroundColor(this)">
+        <p class="paro">Most Popular</p>
+        <h3>PRo</h3>
+        <p>19$/mo</p>
+        <ul>
+          <li>5 Workplaces</li>
+          <li>Unlimited Members</li>
+          <li>50GB Storage</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+      <div class="card-type" onclick="changeBackgroundColor(this)">
+        <h3>Enterprise</h3>
+        <p>Contact Us</p>
+        <ul>
+          <li>Unlimited Workplace</li>
+          <li>Unlimited Members</li>
+          <li>Unlimited Storages</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+    </div>
+    <script>
+      let selectedCard = null;
+
+      function changeBackgroundColor(card) {
+        if (selectedCard) {
+          selectedCard.classList.remove("highlight-card");
+          const button = selectedCard.querySelector(".button");
+          if (button) {
+            button.classList.remove("highlight-card");
+          }
+        }
+
+        selectedCard = card;
+        card.classList.toggle("highlight-card");
+        const button = card.querySelector(".button");
+        if (button) {
+          button.classList.toggle("highlight-card");
+        }
+      }
+    </script>
+  </body>
+</html>

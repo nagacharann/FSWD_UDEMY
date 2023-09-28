@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  width: 95vw;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 220px 250px 150px;
+  grid-template-areas: "image" "text" "stats";
+  background: white;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+  border-radius: 15px;
+  transition: .6s ease;
+}
+.image {
+  background-image: url("https://staticg.sportskeeda.com/editor/2022/01/0bab4-16413888728520-1920.jpg");
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  height: 222px;
+}
+.image1 {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*NwthyMSOHc8vi0wBLfcakA.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 227px;
+}
+.image2 {
+  background-image: url("https://blogs.tribune.com.pk/wp-content/uploads/2014/02/21090-Thebigbangtheorycover-1392893199.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 227px;
+}
+.info {
+  margin-top: 90px;
+ 
+  
+}
+.info .date {
+  color: rgb(153, 19, 19);
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.info p {
+  color: gray;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 0;
+}
+.info h2 {
+  margin-top: 0;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.ratings {
+  display: grid;
+  grid-area: stats;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(106, 20, 20);
+  height: 80px;
+  margin-top: 71px;
+}
+
+.ratings .rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+.ratings .type {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.ratings .value {
+  font-size: 22px;
+  font-weight: 500;
+}
+.ratings .border {
+  border-left: 2px solid black;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgb(0,0,0,.6);
+}
