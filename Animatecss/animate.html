@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -13,10 +14,59 @@
     />
   </head>
   <body>
-    <h1 class="animate__animated animate__delay-.6sanimate__backInLeft">CHERRY</h1>
-    <h1 class="animate__animated animate__delay-.6s animate__bounceIn">KUSHI</h1>
-    <h1 class="animate__animated animate__delay-.6s animate__bounceInDown">VIJJU</h1>
-    <h1 class="animate__animated animate__delay-.6s animate__fadeInDownBig">THARUN</h1>
-    <h1 class="animate__animated animate__rotateInDownLeft animate__delay-.6s">GUNNA</h1>
+   
+    <header class="animate__animated animate__slideInDown animate__delay-.3s">
+        <h2 class="animate__animated animate__zoomIn animate__delay-1s"><a href="">LOGOBAKERY</a></h2>
+        <nav>
+            <ul class="pages">
+                <li class="animate__animated animate__lightSpeedInLeft animate__delay-2s"><a href="">Services</a></li>
+                <li class="animate__animated animate__lightSpeedInLeft animate__delay-3s"><a href="">Services</a></li>
+                <li class="animate__animated animate__lightSpeedInLeft animate__delay-4s"><a href="">Services</a></li>
+        </nav>
+        <a href="" class="animate__animated animate__bounceIn animate__delay-5s"><button>Contact</button></a>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <h1 class="animate__animated animate__flipInX animate__delay-2s">Simple, Transparent Pricing</h1>
+    <p class="para animate__animated animate__delay-3s animate__slideInLeft">
+      Choose a plan that fits your needs. Cancel anytime,no questions asked
+    </p>
+    <br />
+    <br />
+    <div class="card">
+      <div class="card-type animate__animated animate__bounceIn animate__delay-3s" onclick="changeBackgroundColor(this)">
+        <h3>Starter</h3>
+        <p>9$/mo</p>
+        <ul>
+          <li>1 Workplace</li>
+          <li>Unlimited Members</li>
+          <li>10GB Storage</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+      <div class="card-type2 animate__animated animate__bounceIn animate__delay-4s" onclick="changeBackgroundColor(this)">
+        <p class="paro">Most Popular</p>
+        <h3>PRo</h3>
+        <p>19$/mo</p>
+        <ul>
+          <li>5 Workplaces</li>
+          <li>Unlimited Members</li>
+          <li>50GB Storage</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+      <div class="card-type animate__animated animate__bounceIn animate__delay-5s" onclick="changeBackgroundColor(this)">
+        <h3>Enterprise</h3>
+        <p>Contact Us</p>
+        <ul>
+          <li>Unlimited Workplace</li>
+          <li>Unlimited Members</li>
+          <li>Unlimited Storages</li>
+        </ul>
+        <button class="button">Get Strated</button>
+      </div>
+    </div>
   </body>
 </html>
