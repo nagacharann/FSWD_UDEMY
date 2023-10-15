@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(45deg,#2a664f,#003925);
+    color: white;
+}
+
+h1{
+    font-size: 37px;
+    margin-bottom: 20px;
+    letter-spacing: 1.4px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .4);
+    padding: 40px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+.timer{
+    background-color: rgba(72, 30, 30, 0.15);
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100px;
+    max-width: 160px;
+    height: 100%;
+
+}
+.time{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.timer .label{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgb(69, 61, 61);
+  
+}
+
+@media screen and (max-width:1024px) {
+    h1{
+        font-size: 36px;
+    }
+    .countdown{
+        flex-wrap: wrap;
+    }
+    .timer{
+        max-height: 150px;
+        margin: 20px;
+    }
+}
+
+h1.create{
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+.times{
+    margin: 10px;
+    margin-right: 50px;
+}
+input{
+    padding: 10px;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    margin-right: 20px;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsla(168, 97%, 13%, 0.719);
+    color: hsl(0, 0%, 100%);
+    box-shadow: #01150d,#81ceb3 0px 7px 29px 0px;
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsla(158, 98%, 19%, 0.292);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgba(3, 90, 56, 0.421) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }

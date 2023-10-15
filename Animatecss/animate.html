@@ -15,16 +15,39 @@
   </head>
   <body>
    
-    <header class="animate__animated animate__slideInDown animate__delay-.3s">
+    <header class="deskview animate__animated animate__slideInDown animate__delay-.3s">
         <h2 class="animate__animated animate__zoomIn animate__delay-1s"><a href="">LOGOBAKERY</a></h2>
         <nav>
             <ul class="pages">
                 <li class="animate__animated animate__lightSpeedInLeft animate__delay-2s"><a href="">Services</a></li>
                 <li class="animate__animated animate__lightSpeedInLeft animate__delay-3s"><a href="">Services</a></li>
-                <li class="animate__animated animate__lightSpeedInLeft animate__delay-4s"><a href="">Services</a></li>
+                <li class="animate__animated animate__lightSpeedInLeft animate__delay-4s"><a href="">Services</a></li></ul>
         </nav>
         <a href="" class="animate__animated animate__bounceIn animate__delay-5s"><button>Contact</button></a>
     </header>
+    <header class="hamburger-menus  animate__slideInDown animate__delay-.3s">
+      <h2 class="animate__animated animate__zoomIn animate__delay-1s"><a href="">LOGOBAKERY</a></h2>
+      <nav >
+        <div class="hamburger-menu" style="color: white;">
+          <div class="hamburger-icon" onclick="toggleMenu()" style="color: white;">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+          </div>
+          <ul class="pages1">
+            <li class="animate__animated animate__lightSpeedInLeft animate__delay-2s"><a href="" onclick="toggleMenu()">Services</a></li>
+            <li class="animate__animated animate__lightSpeedInLeft animate__delay-3s"><a href="" onclick="toggleMenu()">Services</a></li>
+            <li class="animate__animated animate__lightSpeedInLeft animate__delay-4s"><a href="" onclick="toggleMenu()">Services</a></li>
+            <li>  <a href="" class="animate__animated animate__bounceIn animate__delay-5s"><button>Contact</button></a></li>
+          </ul>
+
+        </div>
+       
+          
+      </nav>
+     
+  </header>
     <br>
     <br>
     <br>
@@ -36,7 +59,7 @@
     <br />
     <br />
     <div class="card">
-      <div class="card-type animate__animated animate__bounceIn animate__delay-3s" onclick="changeBackgroundColor(this)">
+      <div class="card-type animate__animated animate__fadeInLeft animate__delay-3s" onclick="changeBackgroundColor(this)">
         <h3>Starter</h3>
         <p>9$/mo</p>
         <ul>
@@ -46,7 +69,7 @@
         </ul>
         <button class="button">Get Strated</button>
       </div>
-      <div class="card-type2 animate__animated animate__bounceIn animate__delay-4s" onclick="changeBackgroundColor(this)">
+      <div class="card-type2 animate__animated animate__fadeInUp animate__delay-3s" onclick="changeBackgroundColor(this)">
         <p class="paro">Most Popular</p>
         <h3>PRo</h3>
         <p>19$/mo</p>
@@ -57,7 +80,7 @@
         </ul>
         <button class="button">Get Strated</button>
       </div>
-      <div class="card-type animate__animated animate__bounceIn animate__delay-5s" onclick="changeBackgroundColor(this)">
+      <div class="card-type animate__animated animate__fadeInRight animate__delay-3s" onclick="changeBackgroundColor(this)">
         <h3>Enterprise</h3>
         <p>Contact Us</p>
         <ul>

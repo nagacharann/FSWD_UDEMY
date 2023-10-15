@@ -175,3 +175,30 @@ h1 {
   color: black;
   transition: 0.6s ease;
 }
+
+.hamburger-menus{
+  display:none;
+}
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+  .deskview{
+    display: none;
+  }
+  .hamburger-menus{
+    display: flex;
+  }
+
+  
+}

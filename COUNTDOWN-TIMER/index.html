@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <h1 class="animate__animated animate__fadeInDown">Next Episode of LOKI SEASON 2</h1>
+    <div class="countdown animate__animated animate__zoomIn animate__delay-.5s">
+      <div class="timer animate__animated animate__fadeInUp animate__delay-1s">
+        <span class="time" id="days">5</span>
+        <span class="label">days</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInDown animate__delay-2s">
+        <span class="time" id="hours">15</span>
+        <span class="label">hours</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInUp animate__delay-3s">
+        <span class="time" id="min">20</span>
+        <span class="label">Mins</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInDown animate__delay-4s">
+        <span class="time" id="secs">55</span>
+        <span class="label">secs</span>
+    </div>
+    </div>
+    <!--create countdown-->
+    <br>
+   
+
+    <h1 class="create animate__animated animate__fadeInDown">Create Your CountDown Timer</h1>
+    <div class="inputs">
+      <div class="times animate__animated animate__slideInLeft">
+        <span>Enter Date</span>
+        <span><input type="date" name="" id="date"></span>
+      </div>
+      <div class="times animate__animated animate__slideInLeft">
+        <span>Enter Time</span>
+        <span><input type="time" name="" id="time"></span>
+      </div>
+      <div class="times animate__animated animate__pulse">
+        <span><button id="Calculate">Calculate</button></span>
+        <span><button id="Stop"> Stop</button></span>
+      </div>
+    </div>
+
+
+    <div class="countdown animate__animated animate__zoomIn animate__delay-.5s">
+      <div class="timer animate__animated animate__fadeInUp animate__delay-1s">
+        <span class="time" id="Calculatedays">0</span>
+        <span class="label">days</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInDown animate__delay-2s">
+        <span class="time" id="Calculatehours">0</span>
+        <span class="label">hours</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInUp animate__delay-3s">
+        <span class="time" id="Calculatemin">0</span>
+        <span class="label">Mins</span>
+    </div>
+    <div class="timer animate__animated animate__fadeInDown animate__delay-4s">
+        <span class="time" id="Calculatesecs">0</span>
+        <span class="label">secs</span>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
